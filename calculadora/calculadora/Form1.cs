@@ -13,7 +13,8 @@ namespace calculadora
    
     public partial class Form1 : Form
     {
-        int n1 = 0, n2 = 0;
+        double p, s, r;
+        string ope;
         public Form1()
         {
             InitializeComponent();
@@ -62,6 +63,18 @@ namespace calculadora
         private void button10_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + "0";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            ope = "+";
+            p = double.Parse(textBox1.Text);
+            textBox1.Clear();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + ".";
         }
 
         private void button1_Click(object sender, EventArgs e)
