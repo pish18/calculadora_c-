@@ -72,6 +72,51 @@ namespace calculadora
             textBox1.Clear();
         }
 
+        private void button12_Click(object sender, EventArgs e)
+        {
+            ope = "-";
+            p = double.Parse(textBox1.Text);
+            textBox1.Clear();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            ope = "*";
+            p = double.Parse(textBox1.Text);
+            textBox1.Clear();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            ope = "/";
+            p = double.Parse(textBox1.Text);
+            textBox1.Clear();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            switch(ope)
+            {
+                case "+":
+                    r = p + s;
+                    textBox1.Text = r.ToString();
+                    break;
+                case "-":
+                    r = p - s;
+                    textBox1.Text = r.ToString();
+                    break;
+                case "*":
+                    r = p * s;
+                    textBox1.Text = r.ToString();
+                    break;
+                case "/":
+                    r = p / s;
+                    textBox1.Text = r.ToString();
+                    break;
+
+            }
+        }
+
         private void button16_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + ".";
