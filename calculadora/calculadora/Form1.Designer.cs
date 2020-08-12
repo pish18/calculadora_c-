@@ -46,11 +46,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button18);
+            this.groupBox1.Controls.Add(this.button17);
             this.groupBox1.Controls.Add(this.button16);
             this.groupBox1.Controls.Add(this.button15);
             this.groupBox1.Controls.Add(this.button14);
@@ -69,7 +73,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(40, 100);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(285, 219);
+            this.groupBox1.Size = new System.Drawing.Size(306, 219);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -240,6 +244,26 @@
             this.textBox1.Size = new System.Drawing.Size(261, 20);
             this.textBox1.TabIndex = 0;
             // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(257, 44);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(43, 34);
+            this.button17.TabIndex = 16;
+            this.button17.Text = "e";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(257, 99);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(43, 34);
+            this.button18.TabIndex = 17;
+            this.button18.Text = "In";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,6 +299,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button17;
     }
 }
 

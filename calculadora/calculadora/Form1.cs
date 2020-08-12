@@ -113,8 +113,24 @@ namespace calculadora
                     r = p / s;
                     textBox1.Text = r.ToString();
                     break;
+                case "in":
+                    r = Math.Log(p);
+                    textBox1.Text = r.ToString();
+                    break;
 
             }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "e";
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            ope = "in";
+            p = double.Parse(textBox1.Text);
+           // textBox1.Clear();
         }
 
         private void button16_Click(object sender, EventArgs e)
