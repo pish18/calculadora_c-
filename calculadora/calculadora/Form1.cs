@@ -117,13 +117,18 @@ namespace calculadora
                     r = Math.Log(p);
                     textBox1.Text = r.ToString();
                     break;
+                case "e":
+                    r = Math.Exp(p);
+                    textBox1.Text = r.ToString();
+                    break;
 
             }
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + "e";
+            ope = "e";
+            p = double.Parse(textBox1.Text);
         }
 
         private void button18_Click(object sender, EventArgs e)
