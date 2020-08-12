@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +10,10 @@ using System.Windows.Forms;
 
 namespace calculadora
 {
-   
     public partial class Form1 : Form
     {
-        double p, s, r;
-        string ope;
+        float p, s, r;
+        String operador;
         public Form1()
         {
             InitializeComponent();
@@ -67,35 +66,35 @@ namespace calculadora
 
         private void button11_Click(object sender, EventArgs e)
         {
-            ope = "+";
-            p = double.Parse(textBox1.Text);
+            operador = "+";
+            p = float.Parse(textBox1.Text);
             textBox1.Clear();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            ope = "-";
-            p = double.Parse(textBox1.Text);
+            operador = "-";
+            p = float.Parse(textBox1.Text);
             textBox1.Clear();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            ope = "*";
-            p = double.Parse(textBox1.Text);
+            operador = "*";
+            p = float.Parse(textBox1.Text);
             textBox1.Clear();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            ope = "/";
-            p = double.Parse(textBox1.Text);
+            operador = "/";
+            p = float.Parse(textBox1.Text);
             textBox1.Clear();
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            switch(ope)
+            switch(operador)
             {
                 case "+":
                     r = p + s;
@@ -127,13 +126,13 @@ namespace calculadora
 
         private void button17_Click(object sender, EventArgs e)
         {
-            ope = "e";
+            operador = "e";
             p = double.Parse(textBox1.Text);
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            ope = "in";
+            operador = "in";
             p = double.Parse(textBox1.Text);
            // textBox1.Clear();
         }
